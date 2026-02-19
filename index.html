@@ -7,11 +7,32 @@
   <style>
     body, table, td, p, a, h1, h2, h3 {
       font-family: "Times New Roman", Times, serif;
-      color: black;
+      color: white; /* white text */
     }
 
     body {
-      background-color: white;
+      background-color: black;
+    }
+
+    a {
+      color: #00FFFF; /* cyan links */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      width: 1200px; /* even wider table */
+    }
+
+    td.sidebar {
+      width: 350px; /* wider sidebar */
+    }
+
+    hr {
+      border: 1px dashed white; /* subtle dashed line */
     }
   </style>
 
@@ -21,18 +42,18 @@
 
 <br>
 
-<table border="2" width="800" align="center">
+<table border="2" align="center" bgcolor="#111111">
   <tr>
     
     <!-- LEFT SIDEBAR -->
-    <td width="250" valign="top">
+    <td width="300" valign="top">
       <center>
         <img src="me.JPG" width="200"><br><br>
         <b>Navigation</b><br>
-        <a href="#about">About Me</a><br>
-        <a href="#contact">Contact</a><br>
-        <a href="#links">Links</a><br>
-        <a href="#publications">Publications</a><br>
+        <a href="#about">about me</a><br>
+        <a href="#contact">contact</a><br>
+        <a href="#links">links</a><br>
+        <a href="#publications">publications</a><br>
       </center>
     </td>
 
@@ -40,23 +61,23 @@
     <td valign="top">
 
       <a name="about"></a>
-      <h2>About Me</h2>
-      <p><b>Nils Ole Breuer (he/him)</p>
+      <h2>about me</h2>
+      <p><b>Nils Ole Breuer (he/him)</b></p>
       <p><b>PhD Student at 
       <a href="https://secpriv.wien" target="_blank">TU Wien</a>
       </b></p>
-      <p><b>Research Interests:</b> Explainable AI, AI Security, Causality</p>
+      <p><b>Research Interests:</b> The connection between interpretability and robustness of ML models, explainable AI, causality, AI security</p>
 
       <hr>
 
       <a name="contact"></a>
-      <h2>Contact</h2>
-      <p><b>Email:</b> <a href="mailto:your@email.com">nils.breuer@tuwien.ac.at</a></p>
+      <h2>contact</h2>
+      <p><b>email:</b> <a href="mailto:nils.breuer@tuwien.ac.at">nils.breuer@tuwien.ac.at</a></p>
 
       <hr>
 
       <a name="links"></a>
-      <h2>Links</h2>
+      <h2>links</h2>
 
       <p>
         <a href="https://scholar.google.com/citations?user=bhVByUQAAAAJ&hl=de&oi=ao" target="_blank">
@@ -76,15 +97,16 @@
 
       <hr>
       
-
       <a name="publications"></a>
-      <h2>Publications</h2>
+      <h2>publications</h2>
 
       <p>
       Breuer, N. O., Sauter, A., Mohammadi, M., & Acar, E. (2024, July). Cage: Causality-aware shapley value for global explanations. 
       In World Conference on Explainable Artificial Intelligence (pp. 143-162). Cham: Springer Nature Switzerland.
       <a href="https://link.springer.com/chapter/10.1007/978-3-031-63800-8_8" target="_blank">[Link]</a>
       </p>
+
+      <hr>
       <p>Last updated: 2026</p>
 
     </td>
